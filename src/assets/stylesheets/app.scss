@@ -1,6 +1,8 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+// components
+@import './video-background';
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -9,4 +11,13 @@ html, body {
   height: 100%;
   line-height: 23px;
   letter-spacing: 1px;
+}
+
+// temp
+.contact {
+  height: 100vh;
+}
+
+.temp {
+  height: 100vh;
 }
