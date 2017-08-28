@@ -1,0 +1,30 @@
+.tags {
+  color: #666;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 40px;
+}
+
+.tags ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  width: 65%;
+}
+
+.tags li {
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.tags a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tags .active {
+  color: #333;
+  border-bottom: 1px solid #666;
+}
