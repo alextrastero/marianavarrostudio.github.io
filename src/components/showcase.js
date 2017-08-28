@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-// import style from './style';
 
 const smallTags = (tags) =>
   tags.map((tag, idx) => <span class='foo'>{tag}{idx === tags.length - 1 ? '' : ', '}</span>);
@@ -31,7 +30,7 @@ const jobs = [
   },
   {
     title: 'Three else',
-    tags: ['do', 'that'],
+    tags: ['do'],
     link: 'somelink',
     imageUrl: 'pic4'
   },
@@ -44,25 +43,25 @@ const jobs = [
 ];
 
 const jobMapping = (job) => {
-  return <Job {...job} />
+  return <Job {...job} />;
 };
 
 const handleFiltering = (activeTag) => {
   if (activeTag) {
     return jobs.filter(job => job.tags.includes(activeTag)).map(jobMapping);
   } else {
-    return jobs.map(jobMapping)
+    return jobs.map(jobMapping);
   }
-}
+};
 
 const Job = ({
   title = 'Title',
   tags = ['one', 'two'],
   link = 'http://www.google.com',
-  imageUrl = 'img/showcase/one.jpg'
+  imageUrl = 'img/showcase/pic.jpg'
 }) => (
-  <div class='{style.showcase__elem}'>
-    <img alt={title} src={`../assets/img/showcase/${imageUrl}.png`} />
+  <div class='showcase__elem'>
+    <img alt={title} src={`/img/showcase/${imageUrl}.jpeg`} />
     <div>{smallTags(tags)}</div>
     <h2>{title}</h2>
     <a href={link}>READ MORE</a>
@@ -70,8 +69,8 @@ const Job = ({
 );
 
 const Showcase = ({ activeTag }) => (
-  <div class='{style.showcase}'>
-    <div class='{style.showcase__list}'>
+  <div class='showcase'>
+    <div class='showcase__list'>
       { handleFiltering(activeTag) }
     </div>
   </div>

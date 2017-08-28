@@ -10,7 +10,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: DIST_PATH
+    path: DIST_PATH,
+    publicPath: '/'
   },
   module: {
     rules: [

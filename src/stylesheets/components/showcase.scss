@@ -1,0 +1,25 @@
+.showcase {
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__elem {
+    padding: 2%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 25%;
+
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

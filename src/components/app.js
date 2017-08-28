@@ -13,13 +13,13 @@ export default class App extends Component {
     this.handleRoute = this.handleRoute.bind(this);
   }
 
-  handleRoute (e) {
+  handleRoute(e) {
     this.currentUrl = e.url;
   };
 
-  render () {
+  render() {
     return (
-      <div id='app'>
+      <div id='app' class='container'>
         <Header />
         <Router onChange={this.handleRoute}>
           <Work path='/work/:tag?' />

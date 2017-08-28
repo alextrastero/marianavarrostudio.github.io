@@ -1,15 +1,15 @@
-import { h, Component } from 'preact';
-// import style from './style';
+import { h } from 'preact';
 import { Link } from 'preact-router/match';
 
 const Tags = ({ tags }) => (
-  <div class='{style.tags}'>
+  <div class='tags'>
     <ul>
       {tags.map((tag) => (
         <li>
-          <Link activeClassName='{style.active}' href={`/work/${tag}`}>{tag}</Link>
+          <Link activeClassName='active' href={`/work/${tag}`}>{tag}</Link>
         </li>
       ))}
+      <li><Link href={`/work`}>ALL</Link></li>
     </ul>
   </div>
 );

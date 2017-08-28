@@ -1,8 +1,12 @@
-@import '../../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 // components
-@import './video-background';
+@import './components/header';
+@import './components/showcase';
+@import './components/tags';
+@import './components/video-background';
+@import './components/work';
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -11,6 +15,10 @@ html, body {
   height: 100%;
   line-height: 23px;
   letter-spacing: 1px;
+}
+
+.container {
+  padding: 30px;
 }
 
 // temp
