@@ -1,11 +1,9 @@
-import { h, Component } from 'preact';
-
-const smallTags = (tags) =>
-  tags.map((tag, idx) => <span class='foo'>{tag}{idx === tags.length - 1 ? '' : ', '}</span>);
+import { h } from 'preact';
+import Job from './job';
 
 const jobs = [
   {
-    title: 'One else',
+    title: 'Female Tshirt promotion',
     tags: ['initial'],
     link: 'somelink',
     imageUrl: 'pic'
@@ -43,7 +41,11 @@ const jobs = [
 ];
 
 const jobMapping = (job) => {
-  return <Job {...job} />;
+  return (
+    <div class='showcase__elem'>
+      <Job {...job} />
+    </div>
+  );
 };
 
 const handleFiltering = (activeTag) => {
@@ -53,20 +55,6 @@ const handleFiltering = (activeTag) => {
     return jobs.map(jobMapping);
   }
 };
-
-const Job = ({
-  title = 'Title',
-  tags = ['one', 'two'],
-  link = 'http://www.google.com',
-  imageUrl = 'img/showcase/pic.jpg'
-}) => (
-  <div class='showcase__elem'>
-    <img alt={title} src={`/img/showcase/${imageUrl}.jpeg`} />
-    <div>{smallTags(tags)}</div>
-    <h2>{title}</h2>
-    <a href={link}>READ MORE</a>
-  </div>
-);
 
 const Showcase = ({ activeTag }) => (
   <div class='showcase'>

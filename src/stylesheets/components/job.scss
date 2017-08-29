@@ -1,0 +1,21 @@
+.job {
+  &__image {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__tags {
+    text-transform: uppercase;
+    font-size: small;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    margin: .8rem 0 .6rem;
+  }
+
+  &__link {
+    color: $gray;
+    font-size: .7rem;
+  }
+}
