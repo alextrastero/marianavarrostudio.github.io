@@ -6,6 +6,7 @@ import { Router } from 'preact-router';
 import Header from './header';
 import Work from './work';
 import Profile from './profile';
+import Footer from './footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -21,11 +22,14 @@ export default class App extends Component {
     return (
       <div id='app' class='container'>
         <Header />
-        <Router onChange={this.handleRoute}>
-          <Work path='/work/:tag?' />
-          <Profile path='/profile/' user='me' />
-          <Profile path='/profile/:user' />
-        </Router>
+        <div class='content'>
+          <Router onChange={this.handleRoute}>
+            <Work path='/work/:tag?' />
+            <Profile path='/profile/' user='me' />
+            <Profile path='/profile/:user' />
+          </Router>
+        </div>
+        <Footer />
       </div>
     );
   }

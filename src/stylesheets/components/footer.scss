@@ -1,0 +1,11 @@
+footer {
+  background-color: $gray;
+  padding: 40px 20px;
+  font-size: small;
+  text-align: center;
+  display: flex;
+
+  section {
+    width: 33.33%;
+  }
+}
