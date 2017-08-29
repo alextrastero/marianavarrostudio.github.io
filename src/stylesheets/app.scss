@@ -1,6 +1,9 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+// variables
+@import './variables';
+
 // components
 @import './components/header';
 @import './components/showcase';
@@ -29,3 +32,4 @@ html, body {
 .temp {
   height: 100vh;
 }
+
