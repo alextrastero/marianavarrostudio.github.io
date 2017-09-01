@@ -1,8 +1,8 @@
 .header {
-  background: $white;
+  background: $header-bg;
   position: fixed;
   width: 100%;
-  padding: 30px;
+  padding: 40px 30px;
   overflow: auto;
   font-size: small;
 }
@@ -23,17 +23,32 @@
 }
 
 .header nav a {
+  letter-spacing: 1.6px;
   color: $black;
   display: inline-block;
   margin: 0 15px;
-  min-width: 50px;
-  text-align: center;
   text-decoration: none;
-  position: relative;
-  // width: 25%;
+  font-size: medium;
+  transition: color .1s ease;
 
   &.is-active {
-    border-bottom: 1px solid $black;
+    font-weight: 700;
+  }
+
+  &.about-link.is-active, &.about-link:hover {
+    color: $about-active;
+  }
+
+  &.work-link.is-active, &.work-link:hover {
+    color: $work-active;
+  }
+
+  &.contact-link.is-active, &.contact-link:hover {
+    color: $contact-active;
+  }
+
+  &.links-link.is-active, &.links-link:hover {
+    color: $links-active;
   }
 }
 // example
