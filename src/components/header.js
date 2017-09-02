@@ -10,7 +10,7 @@ export default class Header extends Component {
         </div>
         <div>
           <nav>
-            <Link activeClassName='is-active' className='about-link' href='/profile/jose'>ABOUT</Link>
+            <Link activeClassName='is-active' className='about-link' href='/about'>ABOUT</Link>
             <Link activeClassName='is-active' className='work-link' href='/work'>WORK</Link>
             <Link activeClassName='is-active' className='contact-link' href='/contact'>CONTACT</Link>
             <Link activeClassName='is-active' className='links-link' href='/profile/links'>LINKS</Link>

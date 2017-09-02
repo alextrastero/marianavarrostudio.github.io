@@ -1,0 +1,28 @@
+.about {
+  background-color: $header-bg;
+  text-align: center;
+  padding-top: 10px;
+
+  &__main {
+    margin: 40px 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin-top: 40px;
+    padding: 20px 40px 40px;
+    background-color: $white;
+    width: 60%;
+  }
+
+  &__title {
+    font-size: 52px;
+    font-family: $belle-font;
+  }
+
+  &__banner {
+    background-color: $blue;
+    height: 240px;
+  }
+}

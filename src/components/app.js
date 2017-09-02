@@ -8,6 +8,7 @@ import Work from './work';
 import Profile from './profile';
 import Contact from './contact';
 import Footer from './footer';
+import About from './about';
 
 export default class App extends Component {
   constructor(props) {
@@ -27,8 +28,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Work path='/work/:tag?' />
             <Contact path='/contact' />
-            <Profile path='/profile/' user='me' />
-            <Profile path='/profile/:user' />
+            <About path='about' />
           </Router>
         </div>
         <Footer />
