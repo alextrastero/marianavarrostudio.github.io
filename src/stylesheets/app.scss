@@ -1,6 +1,6 @@
 @import '../../node_modules/normalize.css/normalize.css';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Bellefair');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 // variables
 @import './variables';
@@ -13,6 +13,7 @@
 @import './components/work';
 @import './components/job';
 @import './components/footer';
+@import './components/contact';
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -33,7 +34,7 @@ html {
 }
 
 .content {
-  padding-top: 180px;
+  padding-top: 126px;
 }
 
 // temp
