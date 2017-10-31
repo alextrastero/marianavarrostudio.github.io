@@ -2,12 +2,12 @@ import { h } from 'preact';
 
 const Contact = () => {
   return (
-    <div class='contact'>
-      <div class='contact__main'>
+    <div class='Contact'>
+      <div class='Contact__main'>
         <h1>Contact</h1>
-        <p class='contact__subtitle'>Want to discuss a project or just say hi?</p>
-        <p class='contact__small'>Get in touch, i'd love to talk &lt;3</p>
-        <div class='contact__form'>
+        <p class='Contact__subtitle'>Want to discuss a project or just say hi?</p>
+        <p class='Contact__small'>Get in touch, i'd love to talk &lt;3</p>
+        <div class='Contact__form'>
           <form>
             <div class='form__group'>
               <label>

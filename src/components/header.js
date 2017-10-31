@@ -4,8 +4,8 @@ import { Link } from 'preact-router/match';
 export default class Header extends Component {
   render(props) {
     return (
-      <header class='header'>
-        <div class='header__logo'>
+      <header class='Header'>
+        <div class='Header__logo'>
           <h1>Maria Navarro</h1>
         </div>
         <div>

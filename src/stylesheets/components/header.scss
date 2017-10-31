@@ -1,4 +1,4 @@
-.header {
+.Header {
   background: $header-bg;
   position: fixed;
   width: 100%;
@@ -7,7 +7,7 @@
   font-size: small;
 }
 
-.header h1 {
+.Header h1 {
   float: left;
   margin: 0;
   padding: 0 15px;
@@ -16,13 +16,13 @@
   font-weight: 400;
 }
 
-.header nav {
+.Header nav {
   float: right;
   padding-top: 10px;
   font-size: 100%;
 }
 
-.header nav a {
+.Header nav a {
   letter-spacing: 1.6px;
   color: $black;
   display: inline-block;

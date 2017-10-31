@@ -2,7 +2,7 @@ import { h } from 'preact';
 import { Link } from 'preact-router/match';
 
 const Tags = ({ tags }) => (
-  <div class='tags'>
+  <div class='Tags'>
     <ul>
       {tags.map((tag) => (
         <li>

@@ -42,7 +42,7 @@ const jobs = [
 
 const jobMapping = (job) => {
   return (
-    <div class='showcase__elem'>
+    <div class='Showcase__elem'>
       <Job {...job} />
     </div>
   );
@@ -57,8 +57,8 @@ const handleFiltering = (activeTag) => {
 };
 
 const Showcase = ({ activeTag }) => (
-  <div class='showcase'>
-    <div class='showcase__list'>
+  <div class='Showcase'>
+    <div class='Showcase__list'>
       { handleFiltering(activeTag) }
     </div>
   </div>

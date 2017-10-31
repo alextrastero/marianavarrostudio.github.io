@@ -21,7 +21,7 @@ export default class Work extends Component {
   // Note: `user` comes from the URL, courtesy of our router
   render(props) {
     return (
-      <div class='work'>
+      <div class='Work'>
         <Tags tags={this.state.tags} />
         <Showcase activeTag={props.tag} />
       </div>
